@@ -1,0 +1,281 @@
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+  }
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    font-size: 19px;
+    transform: scale(1.1);
+  }
+  
+  .navbar a:active {
+    background-color: white;
+    color: red;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .word {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    animation: word 2.5s ease-in-out forwards;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.5s;
+  }
+  
+  .delay-2 {
+    animation-delay: 1s;
+  }
+  
+  .delay-3 {
+    animation-delay: 1.5s;
+  }
+  
+  .delay-4 {
+    animation-delay: 2s;
+  }
+  
+  .delay-5 {
+    animation-delay: 2.5s;
+  }
+  
+  .delay-6 {
+    animation-delay: 3s;
+  }
+  
+  .delay-7 {
+    animation-delay: 3.5s;
+  }
+  
+  .delay-8 {
+    animation-delay: 4s;
+  }
+  
+  .delay-9 {
+    animation-delay: 4.5s;
+  }
+  
+  .delay-10 {
+    animation-delay: 5s;
+  }
+  
+  @keyframes word {
+    from {
+      width: 0;
+    }
+    to {
+      width: auto;
+    }
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    font-size: 19px;
+    transform: scale(1.1);
+  }
+  
+  .navbar a:active {
+    background-color: white;
+    color: red;
+  }
+  
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  .produto {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    transform: translateY(100%);
+  }
+  
+  .produto:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .produto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .produto h2 {
+    margin-top: 0;
+  }
+  
+  .produto p {
+    margin-bottom: 10px;
+  }
+  
+  .produto button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .produto button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+  }
+  
+  .produto button:active {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+  }
+  
+  /* Animate products appearing on screen */
+  .produto:nth-child(1) {
+    animation: aparecer 0.5s ease 0.1s forwards;
+  }
+  
+  .produto:nth-child(2) {
+    animation: aparecer 0.5s ease 0.2s forwards;
+  }
+  
+  .produto:nth-child(3) {
+    animation: aparecer 0.5s ease 0.3s forwards;
+  }
+  
+  @keyframes aparecer {
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animate product scale on hover */
+  .produto:hover {
+    transform: scale(1.2);
+  }
+  
+  
