@@ -100,47 +100,47 @@ body {
     display: inline-block;
     width: 0;
     overflow: hidden;
-    animation: word 2.5s ease-in-out forwards;
+    animation: word 1.5s ease-in-out forwards;
   }
   
   .delay-1 {
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
   }
   
   .delay-2 {
-    animation-delay: 1s;
+    animation-delay: 0.3s;
   }
   
   .delay-3 {
-    animation-delay: 1.5s;
+    animation-delay: 0.4s;
   }
   
   .delay-4 {
-    animation-delay: 2s;
+    animation-delay: 0.5s;
   }
   
   .delay-5 {
-    animation-delay: 2.5s;
+    animation-delay: 0.6s;
   }
   
   .delay-6 {
-    animation-delay: 3s;
+    animation-delay: 0.7s;
   }
   
   .delay-7 {
-    animation-delay: 3.5s;
+    animation-delay: 0.8s;
   }
   
   .delay-8 {
-    animation-delay: 4s;
+    animation-delay: 0.9s;
   }
   
   .delay-9 {
-    animation-delay: 4.5s;
+    animation-delay: 1s;
   }
   
   .delay-10 {
-    animation-delay: 5s;
+    animation-delay: 1.2s;
   }
   
   @keyframes word {
@@ -152,107 +152,79 @@ body {
     }
   }
   
-  body {
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #e6e6e6;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.produto {
+  width: 300px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.produto h2 {
+  margin-top: 0;
+}
+
+.produto button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.produto button:hover {
+  background-color: #3e8e41;
+}
+
+@media screen and (max-width: 600px) {
   .navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    float: none;
+    display: block;
+    text-align: left;
   }
-  
-  .navbar a:hover {
-    font-size: 19px;
-    transform: scale(1.1);
-  }
-  
-  .navbar a:active {
-    background-color: white;
-    color: red;
-  }
-  
-  .produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px;
-  }
-  
-  .produto {
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-    margin-bottom: 20px;
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
-    transform: translateY(100%);
-  }
-  
-  .produto:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-  }
-  
-  .produto img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .produto h2 {
-    margin-top: 0;
-  }
-  
-  .produto p {
-    margin-bottom: 10px;
-  }
-  
-  .produto button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .produto button:hover {
-    background-color: #3e8e41;
-    transform: scale(1.1);
-  }
-  
-  .produto button:active {
-    background-color: white;
-    color: #4CAF50;
-    border: 2px solid #4CAF50;
-  }
+}
+
   
   /* Animate products appearing on screen */
   .produto:nth-child(1) {
